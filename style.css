@@ -1,0 +1,213 @@
+
+body{
+    width: 100%;
+    background-color: beige;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+.navbar{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: azure;
+}
+.company-name{
+    font-size: 30px;
+    padding-left: 25px;
+}
+.welcome-msg{
+    margin: 0;
+    font-size: 18px;
+}
+.user{
+    padding: 10px 20px 0;
+}
+.id,.user-name{
+    width: 100px;
+    border-radius: 15px;
+    padding: 5px;
+    text-indent: 10px;
+    background-color: azure;
+}
+.nav-btn{
+    padding: 5px;
+    background-color: azure;
+    border-radius: 8px;
+}
+
+.logo img{
+/* background: url('/image/banklogo.png'); */
+position: inherit;
+width: 100px;
+height: 50px;
+/* z-index: -1; */
+}
+
+
+/* nav section end */
+
+/* balance section start */
+
+.balance-header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.balance-header-1{
+    margin-bottom: 0;
+}
+.balance-date-info{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+/* balance section end */
+
+
+/* main info area start */
+
+
+.main-info-area{
+    width: 70%;
+    min-height: 490px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* justify-content: space-around; */
+    background-color: #fff;
+    /* position: absolute; */
+    /* display: block; */
+    margin: auto;
+    border-radius: 20px;
+}
+.transection-detail-area{
+    overflow: auto;
+    height: 490px;
+}
+
+/* transection-row */
+.transection-row{
+    display: flex;
+    /* position: absolute; */
+    justify-content: space-between;
+    /* margin:30px ; */
+    padding: 15px;
+    font-size: 24px;
+    border-bottom: 1px solid gray;
+    text-transform: capitalize;
+
+
+
+}
+.main{
+    opacity:0;
+    transition: .8s;
+}
+.movement-date{
+/* position: absolute; */
+/* left: 100%; */
+font-size: 16px;
+}
+.movement-type--deposit{
+    background-color: #66c873;
+    padding: 5px;
+    /* width: 70px; */
+    border-radius: 10px;
+}
+.movement-type--withdrawal{
+    background-color: #f5465d;
+    padding: 5px;
+    border-radius: 10px;
+}
+/* transfer */
+.transfer-money{
+    background-color: #66c873;
+   min-height: 150px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: -26px;
+}
+.account-close{
+    background-color: #f5465d;
+   min-height: 150px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+
+.transfer-amount,.transfer-id-name{
+    width: 100px;
+    display: inline;
+    text-indent: 5px;
+    padding: 5px;
+    text-indent: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+/* loan */
+.loan-section{
+    background-color: hotpink;
+    border-radius: 20px;
+    text-align: center;
+    min-height: 105px;
+}
+.loan-amount{
+    /* width: 100px; */
+    border-radius: 20px;
+    text-indent: 10px;
+    padding: 5px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+
+}
+/* close account */
+
+.close-user-name,.close-user-password{
+    width: 100px;
+    display: inline;
+    text-indent: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    outline: none;
+
+}
+/* main info area end */
+
+
+/* summary */
+.summary{
+    display: flex; 
+    align-items: baseline;
+    padding: 0 0.3rem;
+    margin-top: 1rem;
+    margin-left: 14%;
+   width: 40%;
+    justify-content: space-between;
+}
+
+.summary-value{
+    font-size: 50px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.summary-label{
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+.summary--in{
+    color: #66c873;
+}
+.summary--out{
+    color: #f5465d;
+}
+
+.summary--interest{
+    color: #66c873;
+}

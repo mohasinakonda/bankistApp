@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>bankist App</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- nav section start -->
+		<nav class="navbar">
+			<div class="company-name">Mohasin's Bank
+				<p class="welcome-msg">Hi <span class="name">Login</span> <span class="msg">first</span> </p>
+			</div>
+			<div class="logo"><img src="./image/banklogo.png" alt="" /></div>
+			<div class="user">
+				<input type="text" class="user-name" placeholder="user name" />
+				<input type="number" class="id" placeholder="input id" />
+				<button class="nav-btn">Go</button>
+			</div>
+		</nav>
+
+		<!-- nav section end -->
+
+		<!-- current balance section start -->
+	<main class="main">
+		<div class="balance-header">
+			<div>
+				<h3 class="balance-header-1">Current balance</h3>
+				<p class="balance-date-info">As of <span class="current-date">27/11/2021 10:40 pm</span></p>
+			</div>
+			<h4 class="current-balance">$0.00</h4>
+		</div>
+		<!-- current balance section end -->
+
+		<!-- ************************ -->
+		<!-- balance info section start -->
+		<div class="main-info-area">
+			<!-- transection detail area start -->
+			<div class="transection-detail-area">
+				<!-- <div class="transection-row">
+					<div class="movement-type movement-type--deposit">deposit</div>
+					<div class="movement-date">08/11/2021</div>
+					<div class="movement-value">7957$</div>
+				</div>
+
+				<div class="transection-row">
+					<div class="movement-type movement-type--withdrawal">withdrawal</div>
+					<div class="movement-date">08/11/2021</div>
+					<div class="movement-value">7-957$</div>
+				</div> -->
+			</div>
+
+			<!-- transection detail area end -->
+
+			<!-- bank area -->
+
+			<div class="bank-info-area">
+				<!-- transfer -->
+				<div class="transfer-money">
+					<h1>Transfer money</h1>
+					<input type="text" class="transfer-id-name" placeholder="Transfer" />
+					<input type="number" class="transfer-amount" placeholder="Amount" />
+					<button class="transfer-btn">Transfer</button>
+				</div>
+
+				<!-- loan -->
+				<div class="loan-section">
+					<h1>Loan money</h1>
+					<input type="number" class="loan-amount" placeholder="Amount" />
+					<button class="loan-request-btn">Request</button>
+				</div>
+				<!-- close account -->
+				<div class="account-close">
+					<h1>Close account</h1>
+					<input type="text" class="close-user-name" placeholder="user name" />
+					<input type="password" class="close-user-password" placeholder="password" />
+					<button class="close-user-account">Close</button>
+				</div>
+			</div>
+		</div>
+		<div class="summary">
+			<p class="summary-label">in</p>
+			<p class="summary-value summary--in">$0.00</p>
+			<p class="summary-label">out</p>
+
+			<p class="summary-value summary--out">$0.00</p>
+			<p class="summary-label">interest</p>
+
+			<p class="summary-value summary--interest">$0.00</p>
+			<p class="movements--sort"><button>Sort</button></p>
+		</div>
+
+		<!-- balance info section end -->
+	</main>	
+		<script src="/index.js"></script>
+	</body>
+</html>
