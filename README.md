@@ -2,4 +2,5 @@
 This is basically a basic bank transaction app
 
 #project link
-https://github.com/mohasinakonda/bankistApp.git
+
+https://mohasinakonda.github.io/bankistApp/
